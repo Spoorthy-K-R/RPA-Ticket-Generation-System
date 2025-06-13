@@ -1,6 +1,5 @@
-# Import required libraries
-import nltk  # Natural Language Toolkit for text processing
-import re    # Regular expressions for pattern matching
+import nltk 
+import re   
 
 def extract_feature(text, syn_list, reg=None):
     """

@@ -1,7 +1,7 @@
 # Import required modules
-from category import *  # For email categorization
-from subject_detection import *  # For subject classification
-from send_email import *  # For sending response emails
+from category import *  
+from subject_detection import *  
+from send_email import *  
 from feature_extraction import *  # For extracting features from emails
 import easyimap  # For email fetching
 import time  # For adding delays
@@ -66,7 +66,6 @@ def extract_and_store_info(email, ticket):
     
     return result
 
-# Main loop for email processing
 while(1):
     time.sleep(3)  # Wait 3 seconds between checks
     
