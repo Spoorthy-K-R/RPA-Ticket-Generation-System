@@ -1,7 +1,6 @@
-# Import required libraries
-import nltk  # Natural Language Toolkit for text processing
-import csv   # For reading CSV files
-import random  # For shuffling training data
+import nltk  
+import csv   
+import random  
 
 # List of possible subjects for email classification
 subjects = [

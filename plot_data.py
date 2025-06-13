@@ -1,6 +1,5 @@
-# Import required libraries
-import csv  # For reading CSV files
-import matplotlib.pyplot as plt  # For creating plots
+import csv 
+import matplotlib.pyplot as plt  
 
 # Load data from CSV file
 csv_filename = 'RPA_DATASET.csv'
