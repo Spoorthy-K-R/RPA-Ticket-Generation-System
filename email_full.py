@@ -1,10 +1,9 @@
-# Import required modules
 from category import *  
 from subject_detection import *  
 from send_email import *  
-from feature_extraction import *  # For extracting features from emails
-import easyimap  # For email fetching
-import time  # For adding delays
+from feature_extraction import *  
+import easyimap  
+import time  
 
 # Global variables for ticket management
 tickets = []  # List to store all active tickets
