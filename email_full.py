@@ -5,7 +5,6 @@ from feature_extraction import *
 import easyimap  
 import time  
 
-# Global variables for ticket management
 tickets = []  # List to store all active tickets
 token_id = 10000  # Starting ID for ticket numbering
 
@@ -66,7 +65,7 @@ def extract_and_store_info(email, ticket):
     return result
 
 while(1):
-    time.sleep(3)  # Wait 3 seconds between checks
+    time.sleep(3) 
     
     # Connect to email server
     imapper = easyimap.connect('imap.gmail.com','USERNAME@gmail.com', 'PASSWORD')
