@@ -1,8 +1,7 @@
-# Import required libraries
-import nltk  # Natural Language Toolkit for text processing
-import csv   # For reading CSV files
-import re    # For regular expressions
-import random  # For shuffling training data
+import nltk  
+import csv   
+import re    
+import random  
 
 # List of important words that help in categorizing emails
 # These words are used as features for classification
