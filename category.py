@@ -6,11 +6,8 @@ import random
 # List of important words that help in categorizing emails
 # These words are used as features for classification
 important_words = [
-    # Positive sentiment words
     'kudos', 'love', 'commending', 'great', 'nice', 'congratulate', 'good', 'super', 'cool',
-    # Negative sentiment words
     'bad', 'angry', 'sad',
-    # Action and feedback words
     'expectations', 'improve', 'know', 'suggest', 'happy', 'commendable', 'recommend',
     'awesome', 'applaudable', 'appreciate', 'glad'
 ]
