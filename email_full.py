@@ -124,7 +124,7 @@ while(1):
     time.sleep(3) 
     
     # Connect to email server
-    imapper = easyimap.connect('imap.gmail.com','testing.nlp25@gmail.com', 'tolq qilg qnke swal')
+    imapper = easyimap.connect('imap.gmail.com','user@gmail.com', 'pass')
     mail_list = imapper.unseen(2)
     if (not mail_list):
         continue

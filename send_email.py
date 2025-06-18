@@ -73,7 +73,7 @@ def send_mail_with_custom_response(mail, ticket, custom_response):
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login("testing.nlp25@gmail.com", "tolq qilg qnke swal")
+    server.login("user@gmail.com", "pass")
     server.sendmail(sender, receivers, msg.get_content())
     server.quit()
     
