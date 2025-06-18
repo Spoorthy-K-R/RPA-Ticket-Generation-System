@@ -3,8 +3,8 @@ import imaplib  # For IMAP email protocol support
 # Email server configuration
 imap_ssl_host = 'imap.gmail.com'  # Can be changed to 'imap.mail.yahoo.com' for Yahoo mail
 imap_ssl_port = 993  # Standard IMAP SSL port
-username = Username  
-password = Password  
+username = 'testing.nlp25@gmail.com'
+password = 'tolq qilg qnke swal'   
 
 # Connect to email server using SSL
 imap = imaplib.IMAP4_SSL(imap_ssl_host, imap_ssl_port)

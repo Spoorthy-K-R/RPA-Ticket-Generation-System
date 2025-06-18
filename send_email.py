@@ -52,17 +52,32 @@ def send_mail(mail, ticket):
     server.login("USERNAME@gmail.com", "PASSWORD")
     server.sendmail(sender, receivers, msg.as_string())
     server.quit()
+
+def send_mail_with_custom_response(mail, ticket, custom_response):
+    # Set up email parameters
+    sender = 'support@bookticket.com'
+    receivers = [mail]
+
+    # Create email message
+    msg = EmailMessage()
+    
+    # Add ticket information to the custom response
+    enhanced_response = custom_response + f"\n\nToken ID: {ticket['token_id']}\nCATEGORY: {ticket['category']}\nSUBJECT: {ticket['subject']}\nCheers"
+    msg.set_content(enhanced_response)
+
+    # Set email subject
+    msg['Subject'] = "RE: " + ticket['response_list'][0]['content']['subject']
+    
+    # Connect to SMTP server and send email
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.ehlo()
+    server.starttls()
+    server.ehlo()
+    server.login("testing.nlp25@gmail.com", "tolq qilg qnke swal")
+    server.sendmail(sender, receivers, msg.get_content())
+    server.quit()
     
 def generate_mail(ticket):
-    """
-    Generates the content of the response email based on ticket information.
-    
-    Args:
-        ticket (dict): Ticket information containing category, subject, and status
-        
-    Returns:
-        str: Formatted email content
-    """
     # Add ticket information header
     cat_info = "\n\nToken ID: {0}\nCATEGORY: {1}\nSUBJECT: {2}".format(
         ticket['token_id'],
