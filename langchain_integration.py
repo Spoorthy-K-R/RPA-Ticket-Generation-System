@@ -8,7 +8,7 @@ import json
 
 # Initialize Gemini API key
 # api_key = os.getenv("GOOGLE_API_KEY")
-api_key = 'AIzaSyD8Lnshp4THbp7jYRF9IHFyxtyGAdEBzfA'
+api_key = 'key'
 
 # Categories for email classification
 CATEGORIES = ['appreciation', 'suggestion', 'complaint', 'request', 'enquiry']
