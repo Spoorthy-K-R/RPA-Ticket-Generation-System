@@ -9,13 +9,12 @@ requirements = {
         (['bag color', 'color'],) 
     ],
     'Refund': [
-        (['pnr'], r"(\d[\- ]?){10}"),  # PNR number
-        (['train name', 'train'],),  # Train name
-        (['origin', 'from'],),  # Origin station
-        (['destination', 'to'],),  # Destination station
-        (['mobile no','mobile number','mobile','phone'], r"[+]?(\d[\- ]?){10,13}"),  # Contact number
-        (['card no', 'card number', 'card'], r"(\d[\- ]?)+"),  # Card number
-        (['booking id', 'transaction id', 'referance id', 'referance no'],),  # Booking reference
+        (['pnr'], r"(\d[\- ]?){10}"),  
+        (['train name', 'train'],), 
+        (['origin', 'from'],),  
+        (['destination', 'to'],),  
+        (['mobile no','mobile number','mobile','phone'], r"[+]?(\d[\- ]?){10,13}"), 
+        (['booking id', 'transaction id', 'referance id', 'referance no'],),  
         (['refund amount', 'amount'],)  
     ],
     'Special Assistance': [
