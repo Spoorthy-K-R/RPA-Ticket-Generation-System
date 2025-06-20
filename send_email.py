@@ -6,7 +6,7 @@ from email.message import EmailMessage
 requirements = {
     'Baggage Related': [
         (['pnr'], r"(\d[\- ]?){10}"),  # PNR number pattern
-        (['bag color', 'color'],)  # Bag color information
+        (['bag color', 'color'],) 
     ],
     'Refund': [
         (['pnr'], r"(\d[\- ]?){10}"),  # PNR number
@@ -16,12 +16,12 @@ requirements = {
         (['mobile no','mobile number','mobile','phone'], r"[+]?(\d[\- ]?){10,13}"),  # Contact number
         (['card no', 'card number', 'card'], r"(\d[\- ]?)+"),  # Card number
         (['booking id', 'transaction id', 'referance id', 'referance no'],),  # Booking reference
-        (['refund amount', 'amount'],)  # Refund amount
+        (['refund amount', 'amount'],)  
     ],
     'Special Assistance': [
-        (['pnr'], r"(\d[\- ]?){10}"),  # PNR number
-        (['destination', 'to'],),  # Destination station
-        (['origin', 'from'],)  # Origin station
+        (['pnr'], r"(\d[\- ]?){10}"),  
+        (['destination', 'to'],),  
+        (['origin', 'from'],)  
     ]
 }
 
