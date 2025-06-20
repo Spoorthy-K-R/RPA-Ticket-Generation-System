@@ -6,7 +6,6 @@ import os
 from typing import Dict, List, Any
 import json
 
-# Initialize Gemini API key
 # api_key = os.getenv("GOOGLE_API_KEY")
 api_key = 'key'
 
@@ -151,7 +150,7 @@ def extract_and_store_info(email, ticket):
     )
     
     chain = LLMChain(llm=llm, prompt=prompt)
-    result = chain.run(
+    result = chain.run(     #change to invoke as run is decommisioned
         subject=email['subject'],
         body=email['body']
     )
