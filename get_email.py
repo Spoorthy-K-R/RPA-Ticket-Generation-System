@@ -1,8 +1,8 @@
-import imaplib  # For IMAP email protocol support
+import imaplib  
 
 # Email server configuration
-imap_ssl_host = 'imap.gmail.com'  # Can be changed to 'imap.mail.yahoo.com' for Yahoo mail
-imap_ssl_port = 993  # Standard IMAP SSL port
+imap_ssl_host = 'imap.gmail.com'  
+imap_ssl_port = 993  
 username = 'user@gmail.com'
 password = 'pass'   
 

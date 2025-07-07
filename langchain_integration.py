@@ -155,7 +155,7 @@ def extract_and_store_info(email, ticket):
         body=email['body']
     )
     
-    return eval(result)  # Convert string JSON to dictionary
+    return eval(result)  
 
 def suggest_priority(ticket, sentiment):
 
