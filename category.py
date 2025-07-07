@@ -66,7 +66,6 @@ for row in list(csv.DictReader(csv_file)):
     ))
 csv_file.close()
 
-# Generate feature set for training
 # Convert each email into features using categorize_feature function
 feature_set = [(categorize_feature(email), categ) for (email, categ) in train_set]
 

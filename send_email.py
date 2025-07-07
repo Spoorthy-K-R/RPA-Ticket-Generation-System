@@ -97,11 +97,8 @@ def generate_mail(ticket):
                 else:
                     str1 += "\n" + r_feat[0][0].title()
     elif (ticket['category'] == 'Appreciation'):
-        # Message for appreciation emails
         str1 = "We are glad to hear you liked our services and we hope that you will recommend us to your family and friends"
     elif (ticket['category'] == 'Suggestion'):
-        # Message for suggestion emails
         str1 = "Thank you for your suggestion, we appreciate your effort and will try to implement in the best way possible"
     
-    # Return complete email content
     return str1 + cat_info + "\nCheers"
